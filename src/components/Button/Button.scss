@@ -13,7 +13,9 @@ $greenish: rgb(61, 214, 186);
   font-weight: 700;
   border: none;
   cursor: pointer;
-
+  margin: 1em;
+  min-width: 200px;
+  max-width: 60%;
   position: relative;
   overflow: hidden;
 }

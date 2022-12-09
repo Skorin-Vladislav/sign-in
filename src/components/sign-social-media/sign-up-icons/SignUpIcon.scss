@@ -1,6 +1,6 @@
 .mapped-icons-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .icons-mapped {
@@ -9,5 +9,6 @@
   justify-content: center;
   align-items: center;
   padding: 1em;
+  margin: 0.5em;
   border: solid 2px black;
 }

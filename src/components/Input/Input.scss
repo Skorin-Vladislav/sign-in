@@ -1,13 +1,14 @@
 .input {
   border-radius: 50px;
   line-height: 2.5em;
-  min-width: 200px;
-  max-width: 300px;
+  min-width: 300px;
+  max-width: 60%;
   border: none;
   background-color: lightgray;
-  padding-left: 20%;
-  padding-right: 10%;
+  padding-left: 2.5em;
+  padding-right: 0.5em;
   font-weight: 700;
+  margin: 1em;
 
   &::placeholder {
     color: gray;
@@ -16,11 +17,13 @@
 
 .input-container {
   position: relative;
+  max-width: fit-content;
+  max-height: fit-content;
 
   & .icon-input {
     position: absolute;
-    top: 25%;
-    left: 5%;
+    top: 38%;
+    left: 7%;
   }
 }
 

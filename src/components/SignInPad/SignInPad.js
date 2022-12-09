@@ -4,13 +4,18 @@ import "./SignInPad.scss";
 import Button from "../Button/Button";
 import Input from "../Input/Input";
 import SignUpMedia from "../sign-social-media/SignUpMedia";
-function SignInPad() {
+function SignInPad(props) {
   return (
-    <div>
-      <h1>Sign In</h1>
-      <Input />
-      <Input />
-      <Button  />
+    <div className="pad">
+      {props.parentState}
+      <h1 className="changable-heading">
+        {props.parentState === "Sign up" ? "Sign up" : "Sign in"}
+      </h1>
+      <Input inuptText="Username" />
+      <Input inuptText="Password" />
+      <Input inuptText="Email" ParentState={props.parentState} />
+
+      <Button btnClass="filled" btnText={props.parentState} />
       <SignUpMedia />
     </div>
   );
