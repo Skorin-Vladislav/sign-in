@@ -1,0 +1,25 @@
+$greenish: rgb(61, 214, 186);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.btn {
+  border-radius: 50px;
+  padding: 1.2em;
+  color: white;
+  font-weight: 700;
+  border: none;
+}
+
+.filled {
+  background-color: $greenish;
+  transition: background-color , color 0.5s;
+  &:hover {
+    background-color: white;
+    color: $greenish;
+    outline: solid 2px;
+  }
+}
