@@ -7,7 +7,6 @@ import SignUpMedia from "../sign-social-media/SignUpMedia";
 function SignInPad(props) {
   return (
     <div className="pad">
-      {props.parentState}
       <h1 className="changable-heading">
         {props.parentState === "Sign up" ? "Sign up" : "Sign in"}
       </h1>
