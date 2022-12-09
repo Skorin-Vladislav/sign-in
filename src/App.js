@@ -1,7 +1,7 @@
 import logo from "./logo.svg";
 import "./App.scss";
 import Button from "./components/Button/Button";
-
+import SignUpMedia from "./components/sign-social-media/SignUpMedia";
 function App() {
   return (
     <div className="App">
@@ -19,7 +19,7 @@ function App() {
           Learn React
         </a>
       </header> */}
-      <Button btnText="HELLO I'M BUTTON" btnClass="filled" />
+      <SignUpMedia />
     </div>
   );
 }
