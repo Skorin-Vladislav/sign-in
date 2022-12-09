@@ -10,19 +10,35 @@ function App() {
     state === "Sign in" ? setState("Sign up") : setState("Sign in");
     moveBackground();
   };
-
+  //TODO: change to toggle
   const moveBackground = () => {
     if (state === "Sign in") {
       let background = document.getElementsByClassName("background");
       let textOnBG = document.getElementsByClassName("bg-wrapper-left");
       let rightPad = document.getElementById("rightpad");
+      let textOnBGRight = document.getElementsByClassName("hide-right");
+      let leftPad = document.getElementById("leftpad");
+
       rightPad.classList.add("hide");
       background[0].classList.add("move-bg");
       textOnBG[0].classList.add("hide-left");
-    }
-    let textOnBGRight = document.getElementsByClassName("hide-right");
 
-    textOnBGRight[0].classList.remove("hide-right");
+      textOnBGRight[0].classList.remove("hide-right");
+      leftPad.classList.remove("hide");
+    } else {
+      let background = document.getElementsByClassName("background");
+      let textOnBG = document.getElementsByClassName("bg-wrapper-left");
+      let rightPad = document.getElementById("rightpad");
+      let textOnBGRight = document.getElementsByClassName("bg-wrapper-rigth");
+      let leftPad = document.getElementById("leftpad");
+
+      rightPad.classList.remove("hide");
+      background[0].classList.remove("move-bg");
+      textOnBG[0].classList.remove("hide-left");
+
+      textOnBGRight[0].classList.add("hide-right");
+      leftPad.classList.add("hide");
+    }
   };
 
   return (
@@ -30,9 +46,9 @@ function App() {
       <div className="background"></div>
 
       <div className="left">
-        {/* <div id="leftpad">
+        <div id="leftpad" className="hide">
           <SignInPad parentState={state} />
-        </div> */}
+        </div>
 
         {/*     copy to right     */}
         <div className="bg-wrapper-left">

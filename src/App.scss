@@ -7,7 +7,7 @@ body {
 .App {
   text-align: center;
   overflow: hidden;
-  min-height: 100vh;
+  max-height: 100vh;
   display: flex;
   justify-content: space-between;
   position: relative;
@@ -16,7 +16,6 @@ body {
   }
   .right {
     width: 50%;
-    z-index: 5;
   }
 
   .bg-wrapper-left {
@@ -81,4 +80,24 @@ body {
 
 .hide-right {
   transform: translateX(100%) !important;
+}
+
+#leftpad {
+  position: absolute;
+  z-index: -5;
+
+  min-width: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#rightpad {
+  position: absolute;
+  z-index: -5 !important;
+
+  min-width: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
