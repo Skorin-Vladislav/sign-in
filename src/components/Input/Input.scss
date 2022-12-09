@@ -1,0 +1,29 @@
+.input {
+  border-radius: 50px;
+  line-height: 2.5em;
+  min-width: 200px;
+  max-width: 300px;
+  border: none;
+  background-color: lightgray;
+  padding-left: 20%;
+  padding-right: 10%;
+  font-weight: 700;
+
+  &::placeholder {
+    color: gray;
+  }
+}
+
+.input-container {
+  position: relative;
+
+  & .icon-input {
+    position: absolute;
+    top: 25%;
+    left: 5%;
+  }
+}
+
+.hide {
+  display: none;
+}

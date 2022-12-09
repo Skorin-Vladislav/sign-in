@@ -2,6 +2,7 @@ import logo from "./logo.svg";
 import "./App.scss";
 import Button from "./components/Button/Button";
 import SignUpMedia from "./components/sign-social-media/SignUpMedia";
+import Input from "./components/Input/Input";
 function App() {
   return (
     <div className="App">
@@ -19,7 +20,8 @@ function App() {
           Learn React
         </a>
       </header> */}
-      <SignUpMedia />
+      <Input />
+      
     </div>
   );
 }
